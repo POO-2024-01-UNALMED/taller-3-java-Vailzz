@@ -13,33 +13,26 @@ public class TV{
         this.estado = estado;
         numTV++;   
     }
-	
-// GETTERS Y SETTERS
-	public Marca getMarca() {
-		return this.marca;
-	}
-	public void setMarca(Marca marca) {
-		this.marca = marca;
-	}
-	
-	
-	public int getCanal() {
-		return canal;
-	}
+    public Marca getMarca(){
+        return marca;
+    }
+    public void setMarca(Marca marca){
+        this.marca = marca;
+    }
+    public int getCanal(){
+        return canal;
+    }
     public void setCanal(int nuevoCanal){
         if(nuevoCanal<=120 && nuevoCanal>=1 && estado){
             canal=nuevoCanal;
         }
     }
-	
-	public int getPrecio() {
-		return precio;
-	}
-	public void setPrecio(int newprecio) {
-		precio = newprecio;
-	}
-	
-	
+    public int getPrecio(){
+        return precio;
+    }
+    public void setPrecio(int nuevoPrecio){
+        precio=nuevoPrecio;
+    }
     public int getVolumen(){
         return volumen;
     }
@@ -93,7 +86,3 @@ public class TV{
         }
     }
 }
-	
-
-
-
